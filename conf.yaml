@@ -1,0 +1,13 @@
+port: 3002
+interface: wlan0mon
+interval: 5000
+scanner: http://localhost:3001/rt/all
+rsyslog:
+  enabled: false
+  host: 10.1.1.22
+  port: 514
+  appname: wifi-killer
+target:
+  infrastructure:
+    - A8:5E:45:AE:AD:58
+  # client
